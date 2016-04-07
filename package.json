@@ -12,5 +12,8 @@
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
+  },
+  "devDependencies": {
+    "cross-spawn": "^2.2.0"
   }
 }
