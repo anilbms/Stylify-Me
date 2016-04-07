@@ -6,9 +6,11 @@ var express = require('express')
 	, fs = require('fs')
 	, childProcess = require('child_process');
 
+childProcess.spawn = require('cross-spawn');
+
 /* Variables / Config */
 var config = {
-	 binPath : "vendor/phantomjs/bin/phantomjs"
+	 binPath : "phantomjs"
 	, crawlerFilePath : "stylify-crawler.js"
 	, rasterizeFilePath : "phantom-rasterize.js"
 	, screenshotCacheTime : 5000 * 1 //in ms (1000ms = 1 sec)
